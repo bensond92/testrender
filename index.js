@@ -7,6 +7,10 @@ app.get("/", (req, res) => {
   res.send("Hello World from Render2 🚀");
 });
 
+app.get("/hello", (req, res) => {
+  res.send("API Health okay");
+});
+
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
